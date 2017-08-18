@@ -1,7 +1,7 @@
 # rolling_banner_tool
 
-	``
-		Branch
+	
+		(Branch)
 
 			master : 최종 릴리즈 버젼 
 
@@ -10,10 +10,10 @@
 					personal_branch : 개인작업 브랜치로  develop <-> personal_branch 
 
 					personal_branch : 개인작업 브랜치로  develop <-> personal_branch 
-					
+
 					personal_branch : 개인작업 브랜치로  develop <-> personal_branch 
 
 
 
-	``
+	
 
