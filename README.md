@@ -1,7 +1,10 @@
 # rolling_banner_tool
+	
 
 	
 		(Branch)
+
+			인코딩 : utf-8
 
 			master : 최종 릴리즈 버젼 
 
