@@ -15,6 +15,7 @@ body{background-color: #f7f7f7; overflow:hidden}
 #header{ background-color: #ffffff}
 #header .top_side{height:40px; width:100%; position: relative; border-bottom:1px solid #e6e6e6;}/*상단영역*/
 #header .top{height:46px; width:100%;position: relative; border-bottom: 1px solid #f3f3f3; text-align: center;  }
+/*데스크탑 & 모바일 버튼 아이콘 */
 #header .icon{overflow: hidden; position: relative; width:95px; margin:0 auto; z-index: 19;}
 #header .icon li{float: left; width:46px; overflow: hidden}
 #header .icon li img{vertical-align: top; width:100%;}
