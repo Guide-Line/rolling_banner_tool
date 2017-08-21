@@ -1,13 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
-	<title>옥션 - 모바일 쇼핑은 옥션</title>
+	<title>RollingBanner_tool</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!-- Reset CSS -->
 	<link rel="stylesheet" href="http://eventimg.auction.co.kr/md/auction/08405BF42E/promotion.init.css">
 	<link rel="stylesheet" href="com/display/view/SystemMsg.css">
 	<link rel="stylesheet" href="com/display/view/InputView.css">
+	<link rel="stylesheet" href="css/main.css">
 	<!-- Custom CSS -->
 	<style type="text/css"></style>
 	<!-- jQuery -->
@@ -20,20 +21,32 @@
 </head>
 <body>
 
-	<div id="layerWrap2" class="fixed" style="display:none;">
-		<div id="dimmed"></div>
-	</div>
-
-	<div id="p_wrapper">
-		<div id="p_header">
-			<!-- Header Area -->
+	<div id="wrapper">
+		<div id="header">
+			<div class="top">
+				<!-- 웹 , 모바일선택 -->
+				<ul class="icon">
+					<li class="select"><a href="javascript:;"><img src="images/desktop_icon.png" alt="pc"></a></li>
+					<li><a href="javascript:;"><img src="images/mobile_icon.png" alt="mobile"></a></li>
+				</ul>
+				<!-- 다운로드 소스보기 -->
+				<p class="right">
+					<a class="downBtn" href="#">파일받기</a>
+					<a class="viewBtn" href="#">소스보기</a>
+				</p>
+				
+			</div>
+			<div class="top_side">
+				<!-- 템플릿 보기 -->
+				<p class="right">
+					<a href="#">템플릿</a>
+				</p>
+			</div>
 		</div>
-		<div id="p_contents">
-			<!-- Contents Area -->
-		</div>
-		<div id="p_footer">
-			<!-- Footer Area -->
-		</div>
+		<!-- end header -->
+		
+	
+		
 	</div>
 	
 
