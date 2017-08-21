@@ -1,0 +1,75 @@
+#souceview_layout {
+    position: absolute;
+    left: 150%;
+    margin-left: -250px;
+    top: 47%;
+    margin-top: -201px;
+    width: 450px;
+    z-index: 100000;
+    border: 1px solid #e3e3e3;
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #e3e3e3;
+}
+
+#souceview_layout p {
+    padding: 10px 5px;
+}
+
+#souceview_layout .title {
+    text-align: left;
+    font-size: 18.55px;
+    line-height: 19px;
+    position: absolute;
+    padding-top: 21px;
+    padding-left: 10px;
+}
+
+#souceview_layout .close {
+    text-align: right;
+    padding-top: 21px !important;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#souceview_layout .close .pop_close_skin {
+    padding-right: 16px;
+}
+
+#souceview_layout .msg {
+    padding: 0 !important;
+}
+
+#souceview_layout .msg textarea {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    height: 350px;
+    width: 450px;
+    resize: none;
+    margin-bottom: -10px;
+    color: #000000;
+}
+
+pre.line-numbers > code {
+    position: relative;
+    margin: -168px !important;
+}
+
+/*.viewWarp .blackLayer {
+    display: none;
+    position: absolute;left:0;top:0;z-index: 100;width: 100%;height: 100%;
+    background-color: #000;opacity:0.5;
+}
+.viewWarp .viewBox {
+    display: none;
+    position: absolute;left:50%;top: 50%;z-index: 100;
+    width: 660px;height: 482px;border: 1px solid #666;background-color: #fff;
+    padding:0 20px 20px 20px;
+    margin:-275px 0 0 -330px;
+    letter-spacing: 0;
+}
+.viewWarp .viewBox .viewHead {position: relative;height: 58px;}
+.viewWarp .viewBox .viewHead p {font-size: 24px;line-height: 58px;}
+.viewWarp .viewBox .viewHead a.btnClose {position: absolute;right:0px;top:25px;z-index: 1}
+.viewWarp .viewBox pre {height: 400px;}*/
+
+
