@@ -23,14 +23,14 @@
 
 function InputView(){
     console.log('InputView')
-    var _this = this;
-    _this.msg='';
-    _this.pop_width;
-    _this.pop_height;
-    _this.popMc;
+    var self = this;
+    self.msg='';
+    self.pop_width;
+    self.pop_height;
+    self.popMc;
+    
 
-
-    _this.viewMakeMarkup()
+    self.viewMakeMarkup()
     
 }
 
@@ -71,8 +71,8 @@ InputView.prototype.viewMakeMarkup = function(){
 // 화면에 소스 copy
 InputView.prototype.view = function(msg){
     console.log('view')
-    var _this = this;
-    _this.msg = msg;
+    var self = this;
+    self.msg = msg;
 
     this.popMc.find('.msg textarea').val(msg);
 
@@ -84,15 +84,15 @@ InputView.prototype.view = function(msg){
 };
 //가운데 오도록 리사이즈
 InputView.prototype.viewResize = function(){
-    var _this = this;
-    _this.pop_width = this.popMc.width()
-    _this.pop_height = this.popMc.height()
+    var self = this;
+    self.pop_width = this.popMc.width()
+    self.pop_height = this.popMc.height()
 
     this.popMc.stop(true, true).animate({
 		top: '47%',
         left: '50%',
-        marginLeft: (_this.pop_width/2)*-1,
-        marginTop: (_this.pop_height/2)*-1
+        marginLeft: (self.pop_width/2)*-1,
+        marginTop: (self.pop_height/2)*-1
 	}, 500,'easeInOutQuart' ,function () {
 		
 	});
@@ -100,21 +100,21 @@ InputView.prototype.viewResize = function(){
 //팝업 닫기
 InputView.prototype.viewClose = function(){    
     console.log('viewClose')
-    var _this = this;
-    _this.popMc.find('.msg textarea').val( _this.msg)
-    _this.popMc.stop().animate({
+    var self = this;
+    self.popMc.find('.msg textarea').val( self.msg)
+    self.popMc.stop().animate({
 		top: '47%',
         left: '150%',
-        marginLeft: (_this.pop_width/2)*-1,        
-        marginTop: (_this.pop_heihgt/2)*-1,        
+        marginLeft: (self.pop_width/2)*-1,        
+        marginTop: (self.pop_heihgt/2)*-1,        
 	}, 500,'easeInOutQuart' ,function () {
 		
 	});
 }
 //팝업 내에버튼 들
 InputView.prototype.controls = function(){
-    var _this = this;
-    _this.popMc.find('.close a img').bind('click' , function(){        
-        _this.viewClose()  
+    var self = this;
+    self.popMc.find('.close a img').bind('click' , function(){        
+        self.viewClose()  
     });    
 }

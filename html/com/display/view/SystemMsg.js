@@ -24,13 +24,13 @@
 // 생성자
 function SystemMsg(){
     console.log('SystemMsg')
-    var _this = this;
-    _this.msg='';
-    _this.pop_width;
-    _this.pop_height;
-    _this.popMc;
+    var self = this;
+    self.msg='';
+    self.pop_width;
+    self.pop_height;
+    self.popMc;
 
-    _this.viewMakeMarkup();
+    self.viewMakeMarkup();
 };
 
 // body 사이에 해당 마크업 생성
@@ -56,8 +56,8 @@ SystemMsg.prototype.viewMakeMarkup=function(){
 // 화면에 표현 변수 msg
 SystemMsg.prototype.view = function(msg){
     console.log('view')
-    var _this = this;
-    _this.msg = msg;
+    var self = this;
+    self.msg = msg;
     this.popMc.find('.msg input').val(msg);
    
     this.viewResize()
@@ -65,15 +65,15 @@ SystemMsg.prototype.view = function(msg){
 
 //가운데 오도록 리사이즈
 SystemMsg.prototype.viewResize = function(){
-    var _this = this;
-    _this.pop_width = this.popMc.width()
-    _this.pop_height = this.popMc.height()
+    var self = this;
+    self.pop_width = this.popMc.width()
+    self.pop_height = this.popMc.height()
 
     this.popMc.stop(true, true).animate({
 		top: '47%',
         left: '50%',
-        marginLeft: (_this.pop_width/2)*-1,
-        marginTop: (_this.pop_height/2)*-1
+        marginLeft: (self.pop_width/2)*-1,
+        marginTop: (self.pop_height/2)*-1
 	}, 500,'easeInOutQuart' ,function () {
 		
 	});
@@ -81,24 +81,24 @@ SystemMsg.prototype.viewResize = function(){
 //팝업 닫기
 SystemMsg.prototype.viewClose = function(){    
     console.log('viewClose')
-    var _this = this;
-    _this.popMc.find('.msg input').val( _this.msg)
-    _this.popMc.stop().animate({
+    var self = this;
+    self.popMc.find('.msg input').val( self.msg)
+    self.popMc.stop().animate({
 		top: '-30%',
         left: '50%',
-        marginLeft: (_this.pop_width/2)*-1,        
+        marginLeft: (self.pop_width/2)*-1,        
 	}, 500,'easeInOutQuart' ,function () {
 		
 	});
 }
 //팝업 내에버튼 들
 SystemMsg.prototype.controls = function(){
-    var _this = this;
-    _this.popMc.find('.close').bind('click' , function(){
-        _this.viewClose()  
+    var self = this;
+    self.popMc.find('.close').bind('click' , function(){
+        self.viewClose()  
     });
-    _this.popMc.find('.okBtn').bind('click' , function(){
-        _this.viewClose()  
+    self.popMc.find('.okBtn').bind('click' , function(){
+        self.viewClose()  
     });  
 }
 
