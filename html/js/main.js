@@ -15,7 +15,7 @@ RollingBanner.prototype.init = function(){
 };
 
 RollingBanner.prototype.btnEvent = function(){
-	console.log("이벤르틑 발생시키는 버튼 () = > btnEvent");
+	console.log("이벤르틑 발생시키는 버튼들 () = > btnEvent");
 	var _this = this;
 	var isView = 0;
 
