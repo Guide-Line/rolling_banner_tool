@@ -16,7 +16,7 @@ RollingBanner.prototype.init = function(){
 
 RollingBanner.prototype.btnEvent = function(){
 	console.log("이벤르틑 발생시키는 버튼들 () = > btnEvent");
-	var _this = this;
+	var self = this;
 	var isView = 0;
 
     $(".icon li>a").each(function(index) {
@@ -24,11 +24,11 @@ RollingBanner.prototype.btnEvent = function(){
         $this.click(function() {
             isView = index;
             if (isView == 0) {            	
-                _this.isWeb = true;
-                console.log("desktop" , _this.isWeb)
+                self.isWeb = true;
+                console.log("desktop" , self.isWeb)
             } else {            	
-                _this.isWeb = false;
-                console.log("mobile" , _this.isWeb)
+                self.isWeb = false;
+                console.log("mobile" , self.isWeb)
             };            
             selectMenu(isView);
         });
@@ -38,10 +38,10 @@ RollingBanner.prototype.btnEvent = function(){
         $(".icon li").eq(n).addClass("select");
         if(n == 0){
         	console.log("desktop select");
-			_this.contentsResize(980)
+			self.contentsResize(980)
         }else{
         	console.log("mobile select")
-        	_this.contentsResize(375)
+        	self.contentsResize(375)
         }
     };
 
@@ -56,10 +56,15 @@ RollingBanner.prototype.btnEvent = function(){
 
 RollingBanner.prototype.contentsResize = function(stageWidth){
 	console.log("보여지는 화면 리사이즈 () = > contentsResize");
-
+	var self = this;
 	$("#mobileViewArea").stop(true, true).animate({
         width: stageWidth
     }, 200, function() {
-        //ui_update();
+        self.update();		
     });
+
+};
+
+RollingBanner.prototype.update = function(){
+	console.log("update")
 }
