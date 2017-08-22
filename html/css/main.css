@@ -26,3 +26,5 @@ body{background-color: #f7f7f7; overflow:hidden}
 #header .top_side .right {position: absolute; right:10px; top:9px;	}
 #header .top_side .right a{font-size: 12px; padding:6px; padding-top:7px !important; color:#000; text-decoration: none; border:1px solid #e3e3e3;}
 
+#mobileViewArea{width:980px; height:1100px; background-color: #ffffff; margin:0 auto; position:relative;display: blcok;}
+
