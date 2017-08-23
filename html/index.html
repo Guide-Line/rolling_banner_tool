@@ -5,23 +5,47 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!-- Reset CSS -->
-	<link rel="stylesheet" href="http://eventimg.auction.co.kr/md/auction/08405BF42E/promotion.init.css">
+	<link rel="stylesheet" href="http://eventimg.auction.co.kr/md/auction/08405BF42E/promotion.init.css">		
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="http://eventimg.auction.co.kr/md/auction/0868D4BD4A/swiper.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>	
+	<script type="text/javascript" src="http://eventimg.auction.co.kr/md/auction/04D25F0304/jquery.easing-1.3.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="plugin/jquery.copy-to-clipboard.js"></script>
+	
+	
+	<script type="text/javascript" src="http://eventimg.auction.co.kr/md/auction/0868D4BD4A/swiper.min.js"></script>
+	
+
 	<link rel="stylesheet" href="com/display/view/SystemMsg.css">
 	<link rel="stylesheet" href="com/display/view/InputView.css">
-	<link rel="stylesheet" href="css/main.css">
-	<!-- Custom CSS -->
-	<style type="text/css"></style>
-	<!-- jQuery -->
-	<script type="text/javascript" src="http://script.auction.co.kr/common/jquery.js"></script>
-	<!-- Common Promotion Script -->
-	<script src="http://eventimg.auction.co.kr/md/auction/08405BF42E/promotion.iac.js"></script>
-	<!-- Custom Script -->
-	<script type="text/javascript"></script>	
-	
 </head>
 <body>
 
+
+	<!--팝업-->
+	<div id="popup">
+		<p class="pop_img_ok"><a href="javascript:;"><img src="images/searchBtn.gif" alt="돋보기"></a></p>
+		<input class="imgUrl" type="text" placeholder="이미지 URL을 입력해 주세요">
+		<div id="holder">
+			<div class="not_img_message">해당 링크의 정보를 불러올수 없습니다<br>링크를 다시 확인 해 주세요</div>
+
+		</div>
+		<input class="linkUrl" type="text" placeholder="클릭시 이동할 URL을 입력해 주세요" >
+
+		<span class="controlCase">
+			<a href="javascript:popup_info_check();"><img src="images/ok_btn.jpg" alt=""></a>
+			<a href="javascript:popup_close();"><img src="images/cancel_btn.jpg" alt=""></a>
+		</span>
+	</div>
+
+
+
 	<div id="wrapper">
+
 		<div id="header">
 			<div class="top">
 				<!-- 웹 , 모바일선택 -->
@@ -43,13 +67,11 @@
 				</p>
 			</div>
 		</div>
-		
-		
 
 		<div id="mobileViewArea">
 			<!-- 컨텐츠 스테이지 --> 
 			<div id="p_wrapper_slide">				
-					<!-- loop -->
+				<!-- loop -->
 			</div>
 		</div>
 	
@@ -57,12 +79,16 @@
 	</div>
 	
 
-	
+	<!-- import class -->
 	<script src="com/display/view/InputView.js"></script>
 	<script src="com/display/view/SystemMsg.js"></script>
+	<!-- 추상화 -->
+	<script src="com/Abstract.js"></script>
+	<!-- 메인js -->
 	<script src="js/main.js"></script>
 
 	<script type="text/javascript">
+
 		var rollingBanner =  new RollingBanner();
 		rollingBanner.init();
 	</script>
