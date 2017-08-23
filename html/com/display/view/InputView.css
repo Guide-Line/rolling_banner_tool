@@ -36,6 +36,7 @@
 
 #souceview_layout .msg {
     padding: 0 !important;
+    overflow: hidden;
 }
 
 #souceview_layout .msg textarea {
@@ -47,6 +48,8 @@
     resize: none;
     margin-bottom: -10px;
     color: #000000;
+    /* overflow:hidden; */
+    
 }
 
 pre.line-numbers > code {

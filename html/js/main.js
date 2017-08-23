@@ -56,7 +56,7 @@ RollingBanner.prototype.btnEvent = function(){
     });
     $('.viewBtn').bind("click", function(e) {
         e.preventDefault();
-        self.__souce_alert('viewBtn click');
+        self.__souce_alert('test test test test test test test test');
     });
 };
 

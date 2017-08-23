@@ -25,7 +25,27 @@
 </head>
 <body>
 
+
+	<!--팝업-->
+	<div id="popup">
+		<p class="pop_img_ok"><a href="javascript:;"><img src="images/searchBtn.gif" alt="돋보기"></a></p>
+		<input class="imgUrl" type="text" placeholder="이미지 URL을 입력해 주세요">
+		<div id="holder">
+			<div class="not_img_message">해당 링크의 정보를 불러올수 없습니다<br>링크를 다시 확인 해 주세요</div>
+
+		</div>
+		<input class="linkUrl" type="text" placeholder="클릭시 이동할 URL을 입력해 주세요" >
+
+		<span class="controlCase">
+			<a href="javascript:popup_info_check();"><img src="images/ok_btn.jpg" alt=""></a>
+			<a href="javascript:popup_close();"><img src="images/cancel_btn.jpg" alt=""></a>
+		</span>
+	</div>
+
+
+
 	<div id="wrapper">
+
 		<div id="header">
 			<div class="top">
 				<!-- 웹 , 모바일선택 -->
@@ -47,13 +67,11 @@
 				</p>
 			</div>
 		</div>
-		
-		
 
 		<div id="mobileViewArea">
 			<!-- 컨텐츠 스테이지 --> 
 			<div id="p_wrapper_slide">				
-					<!-- loop -->
+				<!-- loop -->
 			</div>
 		</div>
 	
