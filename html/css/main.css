@@ -38,3 +38,21 @@ body{background-color: #f7f7f7; overflow:hidden}
 #holder .not_img_message{ font-size:13px;  color:#9f9f9f; text-align: center; padding:33px 0px; display: none; position:relative;}
 #popup .controlCase{position: absolute; bottom:0; left:210px; display: block; padding-bottom: 50px;}
 
+
+#aside{position: fixed; width:100%; height:112px; bottom:0; background: #f7f7f7; border-top:1px solid #ececec; z-index: 99999;}
+#aside #sortable {position: relative;float:left; list-style-type:none; margin:12px 0 0 5px; padding:0; margin-bottom: 10px; font-size: 75px; overflow: hidden; }
+#aside #sortable li {float:left; margin: 12px;width: 60px;height:60px; /*overflow: hidden;*/ position: relative; border:1px solid #222222 !important;}
+#aside #sortable li img{width: 60px;height:60px; vertical-align: top;}
+#aside #sortable li .closeBtn{width: 20px;height: 20px;position: absolute;display: block; left:-10px; top:-9px; z-index: 20; display: none;} 
+#aside #sortable li .closeBtn img{width:100% !important; height: 100% !important; }
+#aside .new_btn{width: 60px; height:60px;  position:absolute; border:1px solid #222222; margin-top:24px; margin-left:8px;}
+#aside .new_btn a{width: 60px; height:60px;}
+#aside .new_btn .addBtn{width: 60px;height:60px; vertical-align: top;}
+#aside .new_btn .addBtn img{width: 60px;height:60px; vertical-align: top;}
+#aside .thum_case{position: absolute; display: block; width: 60px; height: 60px; overflow: hidden !important;}
+#aside .thum_img{position: absolute; z-index: 10; height:150% !important; width:auto !important}
+#aside .plus{/*padding: 30px 0 0 50px; */margin:0; display: block;}
+#aside .ui-state-highlight{background: black !important; border:0 !important;}
+#aside .ui-state-highlight a{color:white;}
+
+
