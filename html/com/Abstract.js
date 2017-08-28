@@ -53,5 +53,15 @@ Abstract.prototype.__download = function(filename , text){
  * @param stop    : 완료 되었을때 발생
  */
 Abstract.prototype.__sortable = function(){
+    $("#sortable").sortable({
+        revert: true,
+        axis: "x",
+        opacity: 0.8,
+        placeholder: "ui-state-highlight",
+        update: function(evt) {            
+            self.update();
+        }
+    });
+};
 
-}
+

@@ -28,6 +28,7 @@ RollingBanner.prototype.init = function(){
             self.update();
         }
     });
+
     self.btnEvent();
 };
 
