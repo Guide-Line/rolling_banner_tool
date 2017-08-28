@@ -15,10 +15,22 @@ RollingBanner.prototype = new Abstract();
 
 
 RollingBanner.prototype.init = function(){
-	console.log("기본실행 () => init" );
-    this.btnEvent();
-   
+	console.log("기본실행 () => init" );    
+    var self = this;
+
+    // list sort
+    $("#sortable").sortable({
+        revert: true,
+        axis: "x",
+        opacity: 0.8,
+        placeholder: "ui-state-highlight",
+        update: function(evt) {            
+            self.update();
+        }
+    });
+    self.btnEvent();
 };
+
 
 RollingBanner.prototype.btnEvent = function(){
 	console.log("이벤르틑 발생시키는 버튼들 () = > btnEvent");
@@ -58,6 +70,13 @@ RollingBanner.prototype.btnEvent = function(){
         e.preventDefault();
         self.__souce_alert('test test test test test test test test');
     });
+    //상품추가버튼
+    $(".new_btn .addBtn").bind("click", function(e) {
+        e.preventDefault()          
+        self.popupResize(0)
+        //viewSouce.viewClose();
+    });
+
 };
 
 /**
@@ -73,6 +92,29 @@ RollingBanner.prototype.contentsResize = function(stageWidth){
     });
 };
 
+
+/**
+ * 
+ * @param {*} n : 0일때 기본입력 , 1일때 잘못된값 입력 , 2일때 미리보기 뷰일때
+ */
+RollingBanner.prototype.popupResize = function(n){
+    
+    var pos_margin_y = ['-160px', '-247px', '-280px'];
+    var heightY = ['215px', '295px', '440px'];
+    var spd = [300, 120, 120]
+
+    $("#popup").animate({
+        'top': '47%',
+        'marginTop': pos_margin_y[n],
+        'height': heightY[n]
+
+    }, spd[n], function() {})
+};
+
+
+/**
+ * 이벤트에 대한 업데이트
+ */
 RollingBanner.prototype.update = function(){
 	console.log("update")
 }

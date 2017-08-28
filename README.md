@@ -7,13 +7,18 @@
 
 				develop : 작업 공유 공간 ( 작업 완료시 master 로 merge )
 
-					personal_branch : 개인작업 브랜치로  develop <-> personal_branch  ( 작업 완료시 develop 로 merge )
+					dk_working(branch)
 
-					personal_branch : 개인작업 브랜치로  develop <-> personal_branch  ( 작업 완료시 develop 로 merge )
+					bhy(branch)
 
-					personal_branch : 개인작업 브랜치로  develop <-> personal_branch  ( 작업 완료시 develop 로 merge )
+					
 
 
+
+### Workflow
+
+	틀 ui 작업 ->  상품 영역 추가 버튼 작업 -> 상품영역추가 입력 팝업 -> 상품영역추가 에대한 정보 저장 공간 작업 -> 
+	
 
 	
 
