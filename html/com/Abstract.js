@@ -40,18 +40,4 @@ Abstract.prototype.__download = function(filename , text){
     document.body.removeChild(element);
 };
 
-/**
- * @param axis    : x축과 y축 중 하나로만 이동
- * @param opacity : 불투명도
- * @param cancel  : Sort대상에서 제외하고자 할 때 id설정, 해당 컨트롤은 드래그 X
- * @param handle  : "span" - 해당영역 <span>태그 부분을 핸들로 설정, <span>부분 끌기 가능
- * @param helper  : function(e, ui) - 소팅되는 동안 해당 요소의 정보를 알 수 있는 이벤트
- * @param start   : function 소팅을 위해서 드래그 하는 순간 발생하는 이벤트
- * @param sort    : function 소팅을 위해서 드래그 하는 순간 발생하는 이벤트
- * @param change  : function 소팅을 위해서 드래그 하는 순간 발생하는 이벤트
- * @param update  : 소팅 후 드롭 할 때(update) 발생하는 이벤트
- * @param stop    : 완료 되었을때 발생
- */
-Abstract.prototype.__sortable = function(){
 
-}
